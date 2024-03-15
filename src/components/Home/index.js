@@ -8,7 +8,7 @@ import Logo from './Logo'
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     const introArray = ['H','e','l','l','o',',',' ','W','o','r','l','d','!']
-    const nameArray = ['e', 'a', 'n']
+    const nameArray = ['e', 'a', 'n', ' ', 'M','c','N','u','t','t']
     const jobArray = ['s','a','l','e','s',' ','e','n','g','i','n','e','e','r','.']
 
     useEffect(() => {
@@ -31,7 +31,7 @@ const Home = () => {
                 <img src={logoLarge} alt="developer" /> 
                 <AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={26} />
                 <br />
-                <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={29} />
+                <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={37} />
                 </h1>
                 <h2>Aspiring Software Engineer</h2>
                 <Link to="/contact" className='flat-button'>CONTACT ME</Link>
