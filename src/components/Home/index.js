@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import logoLarge from '../../assets/images/logo-s-large.png'
+import resume from '../../assets/pdf/Sean McNutt Resume.pdf'
 import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
 import Logo from './Logo'
+import Loader from 'react-loaders';
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -21,6 +23,7 @@ const Home = () => {
       }, []);
     
     return(
+        <>
         <div className='container home-page'>
             <div className='text-zone'>
                 <h1>
@@ -34,10 +37,12 @@ const Home = () => {
                 <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={37} />
                 </h1>
                 <h2>Aspiring Software Engineer</h2>
-                <Link to="/contact" className='flat-button'>CONTACT ME</Link>
+                <a href={resume} target="_blank" rel="noopener noreferrer" className="flat-button">Resume</a>
             </div>
             <Logo />
         </div>
+        <Loader type="ball-pulse-sync" />
+        </>
     );
 }
 
