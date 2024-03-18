@@ -8,7 +8,7 @@
     bottom: 0;
     right: auto;
     margin: auto;
-    opacity: 1;
+    // opacity: 1;
 
     svg{
         width: 100%;
@@ -16,6 +16,7 @@
         bottom: 0;
         transform: rotateZ(30deg) !important;
         z-index: 9991;
+        opacity: 0.5;
     }
     .solid-logo{
         position: absolute;
@@ -25,9 +26,34 @@
         left: 0;
         margin: auto;
         width: 100%;
-        // opacity: 0;
         transform: rotateZ(30deg);
+        animation-delay: 5s;
+        animation: fadeInAndRubberBand 4s ease-in-out 0.8s forwards;
         z-index: 1;
+        
+    }
+    @keyframes fadeInAndRubberBand {
+        0% {
+            opacity: 0;
+        }
+        80% {
+            opacity: 1;
+        }
+        86% {
+            transform: rotateZ(30deg) scale(1.10);
+        }
+        90% {
+            transform: rotateZ(30deg) scale(0.85);
+        }
+        94% {
+            transform: rotateZ(30deg) scale(1.05);
+        }
+        98% {
+            transform: rotateZ(30deg) scale(.90);
+        }
+        100% {
+            transform: rotateZ(30deg) scale(1);
+        }
     }
 }
 

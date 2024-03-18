@@ -5,6 +5,7 @@ import {useState, useEffect} from 'react';
 import headshot from '../../assets/images/sean-tinted.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAndroid, faJava, faJs, faPython, faReact, faSwift } from '@fortawesome/free-brands-svg-icons';
+import Loader from 'react-loaders';
 
 const About = () => {
 
@@ -20,6 +21,7 @@ const About = () => {
       }, []);
 
     return (
+        <>
         <div className='container about-page'>
             <div className='text-zone'>
                 <h1>
@@ -34,7 +36,7 @@ const About = () => {
                     <AnimatedLetters
                         letterClass={letterClass} 
                         strArray={['S','k','i','l','l','s']}
-                        idx={20}
+                        idx={21}
                     />
                 </h3>
                 <p>Solutions Engineering, Software Development, Product Demonstration, Android Development, iOS Development, Web Development, Customer Relationship Management, Technical Support</p>
@@ -42,7 +44,7 @@ const About = () => {
                     <AnimatedLetters
                         letterClass={letterClass} 
                         strArray={['L','a','n','g','u','a','g','e','s']}
-                        idx={28}
+                        idx={30}
                     />
                 </h3>
                 <p>Java, JavaScript, TypeScript, Python, Swift</p>
@@ -71,6 +73,8 @@ const About = () => {
                 </div>
             </div>
         </div>
+        <Loader type="ball-pulse-sync"/>
+        </>
     )
 }
 export default About
