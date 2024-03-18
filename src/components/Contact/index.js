@@ -3,9 +3,6 @@ import "./index.scss";
 import Loader from "react-loaders";
 import { useEffect, useState } from "react";
 import qrcode from "../../assets/images/qrcode.png";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Button from "react";
 import { MapContainer, TileLayer, Marker, Popup, Circle, LayersControl, LayerGroup } from 'react-leaflet';
 
 const Contact = () => {

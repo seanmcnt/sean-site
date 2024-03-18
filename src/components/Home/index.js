@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import logoLarge from '../../assets/images/logo-s-large.png'
 import resume from '../../assets/pdf/Sean McNutt Resume.pdf'
 import './index.scss';
