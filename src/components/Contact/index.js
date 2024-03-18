@@ -58,7 +58,7 @@ const Contact = () => {
             <br />
             Clarksboro, NJ 08020
             <br />
-            <a href="#" onClick={handleCopyEmail}>
+            <a href="/#" onClick={handleCopyEmail}>
             seanmcnt@gmail.com
           </a> 
         </div>
