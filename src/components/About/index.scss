@@ -83,3 +83,22 @@ img.headshot{
     left: 56%;
     transform: translateX(-50%);
 }
+
+@media screen and (max-width: 768px) {
+  .cubespinner {
+    display: none; 
+  }
+
+  img.headshot {
+    top: 0; 
+    right: 0; 
+    bottom: auto; 
+    left: auto;
+    transform: none; 
+    width: auto;
+    height: 20%; 
+    margin-top: -10px; 
+    margin-right: 10px; 
+  }
+
+}

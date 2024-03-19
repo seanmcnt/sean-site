@@ -1,82 +1,107 @@
-.home-page{
-    .text-zone{
-        position: absolute;
-        left: 10%;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 40%;
-        max-height: 90%;
-    }
-    h1{
-        color: white;
-        font-size: 65px;
-        margin: 0;
-        font-family: 'Coolvetica';
-        font-weight: 300;
+.home-page {
+	.text-zone {
+		position: absolute;
+		left: 10%;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 40%;
+		max-height: 90%;
+	}
 
-        &::before{
-            content: '<h1>';
-            font-family: 'La Belle Aurore';
-            color: gold;
-            font-size: 18px;
-            position: absolute;
-            margin-top: -40px;
-            left: 15px;
-            opacity: 0.6;
-        }
+	h1 {
+		color: white;
+		font-size: 65px;
+		margin: 0;
+		font-family: 'Coolvetica';
+		font-weight: 300;
 
-        &::after{
-            content: '</h1>';
-            font-family: 'La Belle Aurore';
-            color: gold;
-            font-size: 18px;
-            position: absolute;
-            margin-top: 18px;
-            margin-left: 20px;
-            opacity: 0.6;
-            animation: fadeIn 1s 1.7s backwards;
-        }
+		&::before {
+			content: '<h1>';
+			font-family: 'La Belle Aurore';
+			color: gold;
+			font-size: 18px;
+			position: absolute;
+			margin-top: -40px;
+			left: 15px;
+			opacity: 0.6;
+		}
+
+		&::after {
+			content: '</h1>';
+			font-family: 'La Belle Aurore';
+			color: gold;
+			font-size: 18px;
+			position: absolute;
+			margin-top: 18px;
+			margin-left: 20px;
+			opacity: 0.6;
+			animation: fadeIn 1s 1.7s backwards;
+		}
 
 
-        img{
-            width: 32px;
-            // Change Margin left 20px down
-            margin-left: 12px;
-            opacity: 0;
-            height: auto;
-            animation: rotateIn .3s linear both;
-            animation-delay: 1.8s;
-        }
-    }
+		img {
+			width: 32px;
+			// Change Margin left 20px down
+			margin-left: 12px;
+			opacity: 0;
+			height: auto;
+			animation: rotateIn .3s linear both;
+			animation-delay: 1.8s;
+		}
+	}
 }
 
-h2{
-    color: #8d8d8d;
-    margin-top: 20px;
-    font-weight: 800;
-    font-size: 14px;
-    font-family: sans-serif;
-    letter-spacing: 3.5px;
-    animation: fadeIn 1s 1.8s backwards;
+h2 {
+	color: #8d8d8d;
+	margin-top: 20px;
+	font-weight: 800;
+	font-size: 14px;
+	font-family: sans-serif;
+	letter-spacing: 3.5px;
+	animation: fadeIn 1s 1.8s backwards;
 
 }
 
-.flat-button{
-    color: gold;
-    font-size: 13px;
-    font-weight: 400;
-    letter-spacing: 4px;
-    font-family: sans-serif;
-    text-decoration: none;
-    padding: 10px 18px;
-    border: 1px solid gold;
-    margin-top: 25px;
-    float: left;
-    animation: fadeIn 1s 1.8s backwards;
-    white-space: nowrap;
+.flat-button {
+	color: gold;
+	font-size: 13px;
+	font-weight: 400;
+	letter-spacing: 4px;
+	font-family: sans-serif;
+	text-decoration: none;
+	padding: 10px 18px;
+	border: 1px solid gold;
+	margin-top: 25px;
+	float: left;
+	animation: fadeIn 1s 1.8s backwards;
+	white-space: nowrap;
 
-    &:hover{
-        background: gold;
-        color: #333;
-    }
+	&:hover {
+		background: gold;
+		color: #333;
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	/* Stretch the h1 text when logo is hidden */
+	.home-page .text-zone {
+		left: 20%;
+		width: 90%;
+		/* Adjust the width as needed */
+	}
+
+	.home-page h1 {
+		font-size: 45px;
+		/* Adjust the font size as needed */
+	}
+
+	.home-page h1::after {
+		position: relative;
+		margin-top: 18px;
+		margin-left: 0;
+		/* Adjust as needed */
+		left: 0;
+		/* Adjust as needed */
+	}
 }
