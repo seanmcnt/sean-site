@@ -48,7 +48,7 @@ const Contact = () => {
               strArray={["L","i","n", "k", "e", "d", "I","n"]}
               idx={24}/>
           </h3>
-          <p>
+          <p className="info-linked">
             <i>Scan the QR code to find me on LinkedIn.</i>
           </p>
           <img className="qrcode" src={qrcode} alt="LinkedIn" />
