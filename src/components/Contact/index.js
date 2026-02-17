@@ -56,24 +56,24 @@ const Contact = () => {
         <div className="info-map">
             Sean McNutt
             <br />
-            Clarksboro, NJ 08020
+            Blackwood, NJ 08012
             <br />
             <a href="/#" onClick={handleCopyEmail}>
             seanmcnt@gmail.com
           </a> 
         </div>
         <div className="map-wrap">
-            <MapContainer center={[39.819270, -75.235145]} zoom={11}>
+            <MapContainer center={[39.795981, -75.062304]} zoom={11}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             <LayersControl position="topright">
                 <LayersControl.Overlay checked name="Sean's Location">
-                    <Marker position={[39.819270, -75.235145]}>
-                        <Popup>Clarksboro, NJ</Popup>
+                    <Marker position={[39.795981, -75.062304]}>
+                        <Popup>Blackwood, NJ</Popup>
                     </Marker>
                 </LayersControl.Overlay>
                 <LayersControl.Overlay unchecked name="Hybrid work radius">
                     <LayerGroup>
-                    <Circle center={[39.819270, -75.235145]} pathOptions={fillBlueOptions} radius={125000} />
+                    <Circle center={[39.795981, -75.062304]} pathOptions={fillBlueOptions} radius={125000} />
                     </LayerGroup>
                 </LayersControl.Overlay>
             </LayersControl>

@@ -31,7 +31,10 @@ const About = () => {
                         idx={12}
                     />
                 </h1>
-                <p>Experienced and results-driven Sales Engineer, with a fervent passion for technology. Actively pursuing new opportunities and bringing forth a versatile skill set honed through a diverse professional background and personal endeavors. Eager to demonstrate my skill set to deliver impactful engineering solutions.</p>
+                <p>Experienced and results-driven Solutions Architect with a passion for technology. Open to exploring
+strategic opportunities where I can leverage a versatile skill set honed through a diverse professional
+background and personal endeavors. Eager to deliver impactful engineering solutions in a
+forward-thinking environment.</p>
                 <h3>
                     <AnimatedLetters
                         letterClass={letterClass} 
@@ -39,7 +42,9 @@ const About = () => {
                         idx={21}
                     />
                 </h3>
-                <p>Solutions Engineering, Software Development, Product Demonstration, Android Development, iOS Development, Web Development, Customer Relationship Management, Technical Support</p>
+                <p>Solutions Architecture, Solutions Engineering, Software Development, Technical Discovery,
+Product Demonstration, Android Development, iOS Development, Web Development,
+Customer Relationship Management, Technical Support</p>
                 <h3>
                     <AnimatedLetters
                         letterClass={letterClass} 
@@ -47,7 +52,7 @@ const About = () => {
                         idx={30}
                     />
                 </h3>
-                <p>Java, JavaScript, TypeScript, Python, Swift</p>
+                <p>Java, JavaScript, C++, TypeScript, Swift, Python, React</p>
             </div>
             <img className='headshot' src={headshot} alt="Headshot" /> 
             <div className='stage-cube-cont'>
