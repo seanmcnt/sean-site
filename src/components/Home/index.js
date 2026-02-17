@@ -33,9 +33,11 @@ const Home = () => {
                 <img src={logoLarge} alt="developer" /> 
                 <AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={26} />
                 <br />
-                <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={32} />
+                <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={36} />
+                <br />
                 </h1>
                 <h2>Experienced Solutions Architect</h2>
+                <br/>
                 <a href={resume} target="_blank" rel="noopener noreferrer" className="flat-button">Resume</a>
             </div>
             <Logo />
