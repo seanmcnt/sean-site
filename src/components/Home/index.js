@@ -10,7 +10,7 @@ const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     const introArray = ['H','e','l','l','o',',',' ','W','o','r','l','d','!']
     const nameArray = ['e', 'a', 'n', ' ', 'M','c','N','u','t','t']
-    const jobArray = ['s','a','l','e','s',' ','e','n','g','i','n','e','e','r','.']
+    const jobArray = ['s','o','l','u','t','i','o','n','s',' ','a','r','c','h','i','t','e','c','t','.']
 
     useEffect(() => {
         const timeoutId = setTimeout(() => {
@@ -35,7 +35,7 @@ const Home = () => {
                 <br />
                 <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={37} />
                 </h1>
-                <h2>Aspiring Software Engineer</h2>
+                <h2>Experienced Solutions Architect</h2>
                 <a href={resume} target="_blank" rel="noopener noreferrer" className="flat-button">Resume</a>
             </div>
             <Logo />
